@@ -1,0 +1,480 @@
+{
+  "settings": {
+    "languages": [
+      "pt"
+    ],
+    "tag": "nlp",
+    "threshold": 0.5,
+    "autoLoad": true,
+    "autoSave": true,
+    "modelFileName": "model.nlp",
+    "executeActionsBeforeAnswers": false,
+    "calculateSentiment": true
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager"
+    },
+    "locales": [
+      "pt"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "pt": {
+        "settings": {
+          "locale": "pt",
+          "trainByDomain": false,
+          "tag": "domain-manager-pt",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "useStemDict": true
+        },
+        "stemDict": {
+          "oi": {
+            "intent": "boasVindas",
+            "domain": "default"
+          },
+          "bem,tud": {
+            "intent": "boasVindas",
+            "domain": "default"
+          },
+          "com,vai": {
+            "intent": "boasVindas",
+            "domain": "default"
+          },
+          "hell": {
+            "intent": "boasVindas",
+            "domain": "default"
+          },
+          "hi": {
+            "intent": "boasVindas",
+            "domain": "default"
+          },
+          "ai,fal": {
+            "intent": "boasVindas",
+            "domain": "default"
+          },
+          "dia,e,hoj,que": {
+            "intent": "data",
+            "domain": "default"
+          },
+          "dat": {
+            "intent": "data",
+            "domain": "default"
+          },
+          "hor,que,sao": {
+            "intent": "horas",
+            "domain": "default"
+          },
+          "bolsonar": {
+            "intent": "bolsonaro",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "boasVindas": "default",
+          "data": "default",
+          "horas": "default",
+          "bolsonaro": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "Oi",
+            "intent": "boasVindas"
+          },
+          {
+            "domain": "default",
+            "utterance": "Tudo bem",
+            "intent": "boasVindas"
+          },
+          {
+            "domain": "default",
+            "utterance": "Como Vai",
+            "intent": "boasVindas"
+          },
+          {
+            "domain": "default",
+            "utterance": "Hello",
+            "intent": "boasVindas"
+          },
+          {
+            "domain": "default",
+            "utterance": "Hi",
+            "intent": "boasVindas"
+          },
+          {
+            "domain": "default",
+            "utterance": "Fala aí",
+            "intent": "boasVindas"
+          },
+          {
+            "domain": "default",
+            "utterance": "Que dia é hoje?",
+            "intent": "data"
+          },
+          {
+            "domain": "default",
+            "utterance": "Data",
+            "intent": "data"
+          },
+          {
+            "domain": "default",
+            "utterance": "Que horas são?",
+            "intent": "horas"
+          },
+          {
+            "domain": "default",
+            "utterance": "Bolsonaro",
+            "intent": "bolsonaro"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "pt",
+              "tag": "nlu-pt",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "oi": 1,
+              "tud": 1,
+              "bem": 1,
+              "com": 1,
+              "vai": 1,
+              "hell": 1,
+              "hi": 1,
+              "fal": 1,
+              "ai": 1,
+              "que": 1,
+              "dia": 1,
+              "e": 1,
+              "hoj": 1,
+              "dat": 1,
+              "hor": 1,
+              "sao": 1,
+              "bolsonar": 1
+            },
+            "intents": {
+              "boasVindas": 1,
+              "data": 1,
+              "horas": 1,
+              "bolsonaro": 1
+            },
+            "intentFeatures": {
+              "boasVindas": {
+                "oi": 1,
+                "tud": 1,
+                "bem": 1,
+                "com": 1,
+                "vai": 1,
+                "hell": 1,
+                "hi": 1,
+                "fal": 1,
+                "ai": 1
+              },
+              "data": {
+                "que": 1,
+                "dia": 1,
+                "e": 1,
+                "hoj": 1,
+                "dat": 1
+              },
+              "horas": {
+                "que": 1,
+                "hor": 1,
+                "sao": 1
+              },
+              "bolsonaro": {
+                "bolsonar": 1
+              }
+            },
+            "featuresToIntent": {
+              "oi": [
+                "boasVindas"
+              ],
+              "tud": [
+                "boasVindas"
+              ],
+              "bem": [
+                "boasVindas"
+              ],
+              "com": [
+                "boasVindas"
+              ],
+              "vai": [
+                "boasVindas"
+              ],
+              "hell": [
+                "boasVindas"
+              ],
+              "hi": [
+                "boasVindas"
+              ],
+              "fal": [
+                "boasVindas"
+              ],
+              "ai": [
+                "boasVindas"
+              ],
+              "que": [
+                "data",
+                "horas"
+              ],
+              "dia": [
+                "data"
+              ],
+              "e": [
+                "data"
+              ],
+              "hoj": [
+                "data"
+              ],
+              "dat": [
+                "data"
+              ],
+              "hor": [
+                "horas"
+              ],
+              "sao": [
+                "horas"
+              ],
+              "bolsonar": [
+                "bolsonaro"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "locale": "pt",
+                "tag": "nlu-pt",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              },
+              "features": [
+                "oi",
+                "tud",
+                "bem",
+                "com",
+                "vai",
+                "hell",
+                "hi",
+                "fal",
+                "ai",
+                "que",
+                "dia",
+                "e",
+                "hoj",
+                "dat",
+                "hor",
+                "sao",
+                "bolsonar"
+              ],
+              "intents": [
+                "boasVindas",
+                "data",
+                "horas",
+                "bolsonaro"
+              ],
+              "perceptrons": [
+                [
+                  7.008023262023926,
+                  3.5659964084625244,
+                  3.5659964084625244,
+                  3.5661044120788574,
+                  3.5661044120788574,
+                  7.003307342529297,
+                  6.976919174194336,
+                  3.555048704147339,
+                  3.555048704147339,
+                  -3.418996810913086,
+                  -1.4346669912338257,
+                  -1.4346669912338257,
+                  -1.4346669912338257,
+                  -6.991573333740234,
+                  -1.8822903633117676,
+                  -1.8822903633117676,
+                  -6.954318523406982,
+                  7.151597670051008
+                ],
+                [
+                  -1.827323079109192,
+                  -0.9408472776412964,
+                  -0.9408472776412964,
+                  -0.9406571984291077,
+                  -0.9406571984291077,
+                  -1.8120888471603394,
+                  -1.8015412092208862,
+                  -0.934645414352417,
+                  -0.934645414352417,
+                  1.7272381782531738,
+                  3.5613162517547607,
+                  3.5613162517547607,
+                  3.5613162517547607,
+                  12.143657684326172,
+                  -1.8303089141845703,
+                  -1.8303089141845703,
+                  -1.841630458831787,
+                  1.8859025814771726
+                ],
+                [
+                  -0.4226069152355194,
+                  -0.2735415995121002,
+                  -0.2735415995121002,
+                  -0.2671048939228058,
+                  -0.2671048939228058,
+                  -0.4124295115470886,
+                  -0.4092085361480713,
+                  -0.25063103437423706,
+                  -0.25063103437423706,
+                  3.708493947982788,
+                  -1.3751568794250488,
+                  -1.3751568794250488,
+                  -1.3751568794250488,
+                  -0.40297994017601013,
+                  5.085582256317139,
+                  5.085582256317139,
+                  -0.4286453127861023,
+                  0.4056773605158426
+                ],
+                [
+                  -1.5440583229064941,
+                  -0.7987982630729675,
+                  -0.7987982630729675,
+                  -0.7986378073692322,
+                  -0.7986378073692322,
+                  -1.529401183128357,
+                  -1.5194038152694702,
+                  -0.79277503490448,
+                  -0.79277503490448,
+                  -0.7213197350502014,
+                  -0.28999146819114685,
+                  -0.28999146819114685,
+                  -0.28999146819114685,
+                  -1.5053051710128784,
+                  -0.43113160133361816,
+                  -0.43113160133361816,
+                  12.410065650939941,
+                  1.5998610179920347
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "pt",
+        "Oi"
+      ],
+      [
+        "pt",
+        "Tudo bem"
+      ],
+      [
+        "pt",
+        "Como Vai"
+      ],
+      [
+        "pt",
+        "Hello"
+      ],
+      [
+        "pt",
+        "Hi"
+      ],
+      [
+        "pt",
+        "Fala aí"
+      ],
+      [
+        "pt",
+        "Que dia é hoje?"
+      ],
+      [
+        "pt",
+        "Data"
+      ],
+      [
+        "pt",
+        "Que horas são?"
+      ],
+      [
+        "pt",
+        "Bolsonaro"
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner",
+      "entityPreffix": "%",
+      "entitySuffix": "%"
+    },
+    "rules": {}
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {
+      "pt": {
+        "boasVindas": [
+          {
+            "answer": "Oi, tudo bem? Como posso te ajudar?"
+          },
+          {
+            "answer": "Oi, como vai?"
+          }
+        ],
+        "data": [
+          {
+            "answer": "Hoje é 14/08/2023"
+          },
+          {
+            "answer": "14 de agosto de 2023"
+          }
+        ],
+        "horas": [
+          {
+            "answer": "Agora é exatamente 18h 11min"
+          },
+          {
+            "answer": "18h 11min"
+          }
+        ],
+        "bolsonaro": [
+          {
+            "answer": "fazuely"
+          },
+          {
+            "answer": "faz 1 L"
+          }
+        ]
+      }
+    }
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {}
+}
