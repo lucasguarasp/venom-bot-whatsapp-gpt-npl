@@ -3,11 +3,11 @@
 Venom: https://github.com/orkestral/venom
 NPL: https://www.npmjs.com/package/node-nlp
 
-### 1 - Clone projeto
-### 2 - npm install
-### 3 - npm i venom-bot@latest
-### 4 - npm install node-nlp
-### 5 - npm install axios - para chat gpt
+#### 1 - Clone projeto
+#### 2 - npm install
+#### 3 - npm i venom-bot@latest
+#### 4 - npm install node-nlp
+#### 5 - npm install axios - para chat gpt
 
 #### Criar um arquivo app.js
 ##### -> inserir:
@@ -21,7 +21,7 @@ NPL: https://www.npmjs.com/package/node-nlp
 #### inserir apiUrl do gpt, em seguida adicionar seu token em Authorization
 #### para inserir lógicas referente ao whatsapp, fazer no arquivo app.js
 #### para ver possíveis funções com bot venom, consultar redme: https://github.com/orkestral/venom/blob/master/README.md
-#### para inserir intenções, perguntas e respostar, alterar o arquivo src/api/model/npl.js 
+#### para inserir intenções, perguntas e respostas, alterar o arquivo src/api/model/npl.js 
 
 
 ### Para rodar o projeto:
