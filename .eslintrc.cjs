@@ -42,7 +42,7 @@ module.exports = {
         commonjs: true,
         es6: true,
         browser: true,
-        node: false
+        node: true
       },
       globals: {
         axios: true,

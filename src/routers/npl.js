@@ -1,4 +1,6 @@
-const { NlpManager, BuiltinIntentClassifier } = require('node-nlp');
+/* eslint-disable no-undef */
+
+const { NlpManager } = require('node-nlp');
 const { format } = require('date-fns');
 const { ptBR } = require('date-fns/locale');
 

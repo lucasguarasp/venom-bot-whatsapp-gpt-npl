@@ -7,7 +7,7 @@ const mime = require('mime-types');
 const venom = require('venom-bot');
 
 const { requestGpt } = require('./src/routers/gpt');
-const { requestNpl } = require('./src/api/model/npl');
+const { requestNpl } = require('./src/routers/npl');
 
 
 // venom
